@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { NavList } from "./components/NavList";
-import { SomeList } from "./pages/SomeList";
+import { Store } from "./pages/Store";
 import { Portfolio } from "./pages/Portfolio";
 import { HomePage } from "./pages/HomePage";
 import Nav from "./components/data/Nav";
@@ -19,8 +19,8 @@ function App() {
       <NavList items={nav.links} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/some-list" element={<SomeList />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/store" element={<Store />} />
       </Routes>
     </>
   );

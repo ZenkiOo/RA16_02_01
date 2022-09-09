@@ -5,10 +5,10 @@ export default class Nav {
         link: "/",
       },
       {
-        link: "/some-list",
+        link: "/portfolio",
       },
       {
-        link: "/portfolio",
+        link: "/store",
       },
     ];
   }
