@@ -1,3 +1,7 @@
 .store {
   padding: 70px 20px 40px 20px;
 }
+li {
+  display: block;
+  padding: 10px;
+}
