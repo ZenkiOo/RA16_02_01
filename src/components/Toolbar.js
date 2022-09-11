@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 const Toolbar = (props) => {
   const onSelect = (e, filterName) => {
     props.onSelectFilter(filterName);
-    console.info(e, filterName);
   };
 
   const filtersList = props.filters.map((item, idx) => {
@@ -18,5 +18,9 @@ const Toolbar = (props) => {
     );
   });
   return <ul className="filters__list">{filtersList}</ul>;
+};
+Toolbar.propTypes = {
+  filters: PropTypes.array,
+  onSelectFilter: PropTypes.func,
 };
 export { Toolbar };

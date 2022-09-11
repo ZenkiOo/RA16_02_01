@@ -26,7 +26,6 @@ const Portfolio = () => {
       {
         <Toolbar
           filters={['All', 'Websites', 'Flayers', 'Business Cards']}
-          selected={filters}
           onSelectFilter={selectFilter}
         />
       }

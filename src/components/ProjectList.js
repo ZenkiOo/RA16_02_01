@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const ProjectList = (props) => {
 
   const listItems = props.projects.map((item, idx) => {
@@ -9,5 +10,8 @@ const ProjectList = (props) => {
     );
   });
   return <ul className='projects__list'>{listItems}</ul>;
+};
+ProjectList.propTypes = {
+  projects: PropTypes.array
 };
 export { ProjectList };

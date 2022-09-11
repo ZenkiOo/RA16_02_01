@@ -1,16 +1,16 @@
+import PropTypes from 'prop-types';
+import { ShopItem } from "./ShopItem";
 function ListView(props) {
     const listItems = props.items.map((item, idx) => {
-      console.log(item);
       return (
-        <li className='store__item' key={idx}>
-          <span>{item.name}</span>
-          <span>{item.price}</span>
-          <span>{item.color}</span>
-          {/* <span>{item.img}</span> */}
-          <img src={item.img} />
+        <li className='list__item' key={idx}>
+          <ShopItem item={item}/>
         </li>
       );
     });
-    return <ul className='store__list store__list--list'>{listItems}</ul>;
+    return <ul className='list'>{listItems}</ul>;
   }
+  ListView.propTypes = {
+    items: PropTypes.array
+  };
   export { ListView };
